@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.TeacherView.AddClassView">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="填写班级信息"
+
+                android:textSize="26dp"
+                android:textColor="@color/black"
+              />
+        </RelativeLayout>
+
+        <LinearLayout
+       style="@style/linearlayoutstylebtn">
+            <TextView
+                style="@style/texttiltestyle"
+                android:text="@string/class_profession"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="请输入专业名称"
+            android:id="@+id/input_profession"
+            android:background="@null"/>
+        </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/class_grade"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="请输入年级"
+            android:id="@+id/input_grade"
+            android:background="@null"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/class_name"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="请输入班级名"
+            android:id="@+id/input_classname"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+
+
+        <Button
+         style="@style/loginbtn"
+            android:id="@+id/add_clas_btn"
+           android:layout_marginTop="50dp"
+            android:text="添加"/>
+
+    </LinearLayout>
+>
+
+</FrameLayout>

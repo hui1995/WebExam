@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Examnation.MenuExaminationView"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true"
+     android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <com.example.administrator.webexam.Utils.NoScrollGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="15dp" >></com.example.administrator.webexam.Utils.NoScrollGridView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                >
+
+                <TextView
+                    android:id="@+id/tv_submit_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0094ff"
+                    android:paddingTop="17dp"
+                    android:paddingBottom="17dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:text="提交试卷"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp" />
+<LinearLayout
+style="@style/linearlayoutstylebtn"
+
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="200dp"
+    android:id="@+id/phoneall">
+<TextView
+  style="@style/texttiltestyle"
+    android:text="账号"/>
+        <EditText
+            android:id="@+id/phone"
+            style="@style/editlogin"
+
+            android:hint="@string/input_phone"
+            android:background="@null"/>
+</LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn"
+
+        android:layout_below="@+id/phoneall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwdall">
+
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="密码"/>
+        <EditText
+            android:id="@+id/passwd"
+            style="@style/editlogin"
+            android:background="@null"
+
+
+            android:hint="@string/input_passwd"
+            android:inputType="textPassword"/>
+
+
+</LinearLayout>
+
+        <Button
+            style="@style/loginbtn"
+            android:layout_below="@+id/passwdall"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="@string/login"
+            android:id="@+id/login"
+            ></Button>
+
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/no_register"
+            android:textSize="16dp"
+            android:textColor="@color/blue_btn"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.Register.RegisterView">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/teacher_reg"
+            style="@style/loginbtn"
+            android:text="@string/teacher_register"
+            android:layout_marginBottom="22dp"
+            android:layout_above="@+id/student_reg"
+            android:layout_centerHorizontal="true"
+            android:background="@color/greenbg"/>
+
+        <Button
+            android:id="@+id/student_reg"
+            style="@style/loginbtn"
+            android:text="@string/student_register"
+
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp" />
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/have_register"
+            android:textSize="16dp"
+            android:textColor="@color/greenbg"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

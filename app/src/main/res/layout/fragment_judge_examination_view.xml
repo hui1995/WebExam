@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Examnation.JudgeExaminationView"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_show"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="question"
+            android:textSize="18dp"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/answser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/option_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正确" />
+
+            <RadioButton
+                android:id="@+id/option2_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="错误" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answser_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="答案"
+
+            android:textSize="16dp"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/anysler_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="答案"
+            android:visibility="invisible"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/anysler_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="解析"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/ansyler"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            android:editable="false"
+            android:text="没有可不添加"
+            android:visibility="invisible"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_btn"
+            android:textColor="@color/white"
+            android:text="下一题"
+    />
+
+    </LinearLayout>
+
+</FrameLayout>

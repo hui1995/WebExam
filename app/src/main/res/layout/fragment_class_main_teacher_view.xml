@@ -1,0 +1,328 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.TeacherView.ClassMainTeacherView">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/greenbg"
+            android:id="@+id/class_id"
+android:gravity="center"
+            android:textColor="@color/white"
+            android:text="班级id"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="班级名称:"
+                    android:textColor="@color/black"
+
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:text="班级名称"
+                    android:id="@+id/classname"
+                    android:layout_marginLeft="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="专业名称:"
+                    android:textColor="@color/black"
+                   />
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="专业名称"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/profession"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="年级:"
+                    android:textColor="@color/black"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="年级"
+                    android:id="@+id/gradeclass"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="学生总人数:"
+                    android:textColor="@color/black"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="人数"
+                    android:id="@+id/auth_true"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="待认证人数"
+                    android:textColor="@color/black"
+                 />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="人数"
+                    android:id="@+id/auth_false"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="考试分析"
+                    android:id="@+id/now_examin"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/greenbg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:layout_marginBottom="10dp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+
+                android:id="@+id/student_mang"
+                android:text="认证管理"/>
+
+<View
+    android:layout_width="2dp"
+    android:layout_height="50dp"
+    android:background="@color/blue_btn"
+    />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:id="@+id/test_edit"
+                android:text="结束考试"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@mipmap/line_deleve"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前考试"
+
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+android:gravity="center"
+                android:text="已考人数:"
+                android:textColor="@color/black"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="人数"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/test_alrealy"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+
+                android:text="最高分"
+                android:textColor="@color/black"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+android:layout_marginLeft="10dp"
+                android:text="fen "
+                android:id="@+id/score_hight"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+               android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="最低分"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/score_low"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="最低分"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+         android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+
+                android:text="平均分"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/score_avae"
+                android:layout_marginLeft="10dp"
+
+                android:text="平均分"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+
+            android:orientation="horizontal"
+            >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:id="@+id/grade_rank"
+            android:text="成绩排名"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="60dp"
+                android:background="@color/blue_btn"
+                android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="1"
+            android:text="试题分析"
+            android:id="@+id/test_ansylet"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</FrameLayout>

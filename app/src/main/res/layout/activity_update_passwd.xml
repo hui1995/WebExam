@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.Activity.UpdatePasswdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+  >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+           />
+    <LinearLayout
+       style="@style/linearlayoutstylebtn"
+
+        android:layout_marginTop="40dp">
+        <TextView
+           style="@style/texttiltestyle"
+            android:text="@string/passwd"
+            android:textColor="@color/black"/>
+        <EditText
+      style="@style/editlogin"
+            android:id="@+id/edit_passwd"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="60dp"
+            android:background="@color/red"
+            android:text="修改密码"
+            android:id="@+id/submit_passwd"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

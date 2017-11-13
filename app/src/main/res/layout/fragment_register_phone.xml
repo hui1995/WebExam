@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.Register.RegisterPhone"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+        style="@style/linearlayoutstylebtn"
+            android:layout_marginTop="7dp">
+
+            <TextView
+        style="@style/texttiltestyle"
+                android:text="@string/phonenumber"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="@string/input_phone"
+            android:id="@+id/input_phone"
+            android:background="@null"
+
+
+       />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn"
+        android:layout_marginTop="7dp">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/nickname"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="@string/input_nickname"
+            android:id="@+id/input_name"
+            android:background="@null"
+
+    />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn"
+        android:layout_marginTop="7dp">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/passwd"/>
+        <EditText
+            style="@style/editlogin"
+            android:hint="@string/input_passwd"
+            android:id="@+id/input_passwd"
+            android:background="@null"
+
+       />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn"
+        android:layout_marginTop="7dp">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/passwd"/>
+
+        <EditText
+            style="@style/editlogin"
+            android:hint="@string/check_passwd"
+            android:id="@+id/check_passwd"
+            android:background="@null"
+
+      />
+    </LinearLayout>
+
+
+        <Button
+           style="@style/loginbtn"
+            android:text="@string/get_code"
+            android:id="@+id/get_code"
+            android:layout_marginTop="40dp"
+    />
+
+    </LinearLayout>
+
+</FrameLayout>

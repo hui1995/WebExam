@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.Register.StudentRegisterView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+         style="@style/linearlayoutstylebtn"
+            android:layout_marginTop="10dp">
+            <TextView
+               style="@style/texttiltestyle"
+                android:text="@string/code"/>
+    <EditText
+       style="@style/editlogin"
+        android:hint="@string/input_code"
+    android:background="@null"
+
+
+        android:id="@+id/getsmscode"/>
+
+        </LinearLayout>
+    <Button
+      style="@style/loginbtn"
+        android:text="@string/register"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signupStudent"/>
+    </LinearLayout>
+</FrameLayout>

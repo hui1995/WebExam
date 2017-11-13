@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.TeacherView.IndexTeacherView">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/index_student">
+
+
+
+
+        <Button
+          style="@style/index_student_btn"
+            android:text="添加试卷"
+            android:id="@+id/add_paper"
+            android:layout_marginTop="180dp"
+            android:textColor="@color/blue_btn"/>
+        <Button
+            style="@style/index_student_btn"
+            android:text="题库大全"
+            android:textColor="@color/red"
+
+            android:id="@+id/question_bank"/>
+        <Button
+            style="@style/index_student_btn"
+            android:text="我的题库"
+            android:id="@+id/my_question_bank"
+            android:textColor="@color/light_green"
+          />
+
+
+
+
+</LinearLayout>
+
+</FrameLayout>

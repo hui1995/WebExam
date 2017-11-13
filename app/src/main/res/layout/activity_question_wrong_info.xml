@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.Activity.QuestionWrongInfoActivity">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="576dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:text="错题"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@color/blue_btn"/>
+
+        <TextView
+            android:id="@+id/question_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="question"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/answser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/option_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/option_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/option_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                />
+
+            <RadioButton
+                android:id="@+id/option_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/answser_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="答案"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+        />
+        <LinearLayout
+           style="@style/linearlayoutstyleadd">
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:text="正确答案:"
+                />
+
+            <TextView
+                android:id="@+id/anysler_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="ture答案"
+                />
+        </LinearLayout>
+        <LinearLayout
+          style="@style/linearlayoutstyleadd">
+
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:text="错误答案"
+
+                />
+
+
+
+
+
+            <TextView
+                android:id="@+id/your_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="false答案"
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/anysler_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="解析"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+          />
+
+        <TextView
+            android:id="@+id/ansyler"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+            android:editable="false"
+            android:text="没有可不添加"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+     />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="back"
+            android:id="@+id/back"
+            android:background="@drawable/rect_btn"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

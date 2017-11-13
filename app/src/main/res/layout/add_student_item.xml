@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+ >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="学号"
+            android:id="@+id/show_student_id_2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+
+           />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="@color/blue_btn"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="姓名"
+                android:textSize="12dp"
+                android:id="@+id/show_student_name_2"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"/>
+
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="添加"
+                android:id="@+id/btn_add_student"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/orange"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="删除"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btn_del_student"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/light_green"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>

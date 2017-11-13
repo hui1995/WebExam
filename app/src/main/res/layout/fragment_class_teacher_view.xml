@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.TeacherView.ClassTeacherView">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="班级列表"
+            android:background="@color/orange"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="@color/allbg"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:orientation="vertical">
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none"
+
+    android:dividerHeight="18dp"
+    android:divider="@color/allbg"
+    android:background="@color/white"
+    android:id="@+id/class_teachet"></ListView>
+
+    </LinearLayout>
+    </LinearLayout>
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/fab_menu"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    app:fab_addButtonColorNormal="@color/light_green"
+    app:fab_addButtonColorPressed="@color/blue_btn"
+    app:fab_addButtonPlusIconColor="@color/white"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+   app:fab_labelStyle="@style/fab_labels_style"
+    android:layout_marginEnd="16dp">
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_class"
+        app:fab_title="添加班级"
+        app:fab_size="mini"
+        style="@style/fab_labels_style"
+
+      app:fab_colorPressed="@color/red"
+        app:fab_colorNormal="@color/white"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="100sp"
+        android:layout_height="60dp"
+        android:id="@+id/examin_admin"
+        app:fab_title="考试管理"
+app:fab_colorPressed="@color/red"
+
+        app:fab_size="mini"
+        app:fab_colorNormal="@color/white"/>
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+</FrameLayout>

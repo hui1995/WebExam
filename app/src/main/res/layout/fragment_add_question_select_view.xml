@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.TeacherView.AddQuestionSelectView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/order"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                style="@style/linearlayoutstyleadd">
+                <TextView
+                    style="@style/texttiltestyle"
+                    android:text="问题"/>
+                <TextView
+
+                    android:id="@+id/tv_getQuestion"
+                    style="@style/editnifo"
+
+                    android:hint="请输入问题"
+                    />
+            </LinearLayout>
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:text="本题的正确答案是"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:textSize="17dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/answser">
+                <RadioButton
+               android:id="@+id/answser_true"
+                    android:text="正确"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/answser_false"
+                    android:text="错误"
+                    />
+            </RadioGroup>
+        <LinearLayout
+            style="@style/linearlayoutstyleadd">
+            <TextView
+                style="@style/texttiltestyle"
+                android:text="解析"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:id="@+id/ansyler"
+                android:hint="没有可不添加"
+                android:editable="false"/>
+</LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rect_btn"
+                android:textColor="@color/white"
+                android:text="下一题"
+                android:id="@+id/next_question"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

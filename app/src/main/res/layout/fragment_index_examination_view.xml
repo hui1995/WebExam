@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Examnation.IndexExaminationView">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="考试名称"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/examin_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="注意事项"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:layout_marginLeft="10dp"/>
+    <TextView
+
+
+        android:text="1，本次考试时间为60分钟"
+        style="@style/attion_style_text"/>
+    <TextView
+
+
+        android:text="2，时间到达择自动交卷，请计算好答题时间"
+        style="@style/attion_style_text"/>
+    <TextView
+
+
+        android:text="3，若中途退出考试，则需重新答题"
+
+        style="@style/attion_style_text"/>
+    <TextView
+
+
+    android:text="4，请保持网络连接畅通"
+style="@style/attion_style_text"/>
+    <TextView
+
+
+        android:text="5，本试题共包含单选题和判断题"
+        style="@style/attion_style_text"/>
+    <TextView
+
+
+        android:text="6，每道试题2分"
+        style="@style/attion_style_text"/>
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+android:textColor="@color/white"
+        android:textSize="16dp"
+    android:id="@+id/now_go_examin"
+        android:background="@color/light_green"
+    android:text="开始考试"/>
+</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.webexam.View.StudentView.StudentAuthView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认证"
+                android:textSize="26dp"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+        <LinearLayout
+          style="@style/linearlayoutstylebtn">
+
+
+       <TextView
+           style="@style/texttiltestyle"
+           android:text="@string/invite"
+        /> <EditText
+            style="@style/editlogin"
+            android:hint="填写班级编号"
+            android:id="@+id/input_invisite"
+            android:background="@null"
+
+   />
+        </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/student_id"
+            />
+        <EditText
+            style="@style/editlogin"
+            android:hint="填写学号"
+            android:id="@+id/input_student_id"
+            android:background="@null"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linearlayoutstylebtn">
+        <TextView
+            style="@style/texttiltestyle"
+            android:text="@string/name"
+            />
+        <EditText
+            style="@style/editlogin"
+            android:hint="填写邀学生姓名"
+            android:id="@+id/input_student_name"
+            android:background="@null"
+
+            />
+
+
+
+</LinearLayout>
+
+
+        <Button
+            style="@style/loginbtn"
+            android:id="@+id/add_clas_btn"
+            android:layout_marginTop="50dp"
+            android:text="添加"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="请找任课老师索要"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:textColor="@color/blue_btn"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

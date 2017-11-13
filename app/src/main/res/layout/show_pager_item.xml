@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pager_id"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/examin_na"
+            android:text="shijuanming"
+            android:singleLine="true"
+            android:ellipsize="end"
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/red"
+            />
+        <TextView
+            android:layout_width="0dp"
+
+
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/option"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="查看"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">CNE</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="teacher_register">教师注册</string>
+    <string name="student_register">学生注册</string>
+    <string name="input_name">请输入姓名</string>
+    <string name="input_nickname">请输入昵称</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="no_register">没有账号？点此注册</string>
+    <string name="have_register">已有账号？点此登录</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_passwd">请输入密码</string>
+    <string name="check_passwd">请确认密码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="input_teacherid">请输入教职工编号</string>
+    <string name="input_paper">请上传在职证明文件</string>
+    <string name="input_university">请输入大学名称</string>
+    <string name="nickname">昵称</string>
+    <string name="phonenumber">手机号</string>
+    <string name="realname">姓名</string>
+    <string name="teacherid">教师号</string>
+    <string name="code">验证码</string>
+    <string name="passwd">密码</string>
+    <string name="university">大学</string>
+    <string name="analogexamin">模拟考试</string>
+    <string name="qustion_bank">题库大全</string>
+    <string name="daliyquestion">强化练习</string>
+    <string name="my_wrong_question">我的错题</string>
+    <string name="class_id">班级编号</string>
+    <string name="class_name">班级名</string>
+    <string name="class_grade">年级</string>
+    <string name="class_profession">专业</string>
+    <string name="yourid">账户</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_admin">MainAdminActivity</string>
+
+    <string name="title_activity_main_student">MainStudentActivity</string>
+    <string name="title_activity_main_teacher">MainTeacherActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navition_home">首页</string>
+    <string name="navigation_class">班级</string>
+    <string name="navigation_me">我的</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="student_id">学号</string>
+    <string name="name">姓名</string>
+    <string name="invite">邀请码</string>
+</resources>

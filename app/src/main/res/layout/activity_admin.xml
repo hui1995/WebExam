@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allbg"
+    tools:context="com.example.administrator.webexam.Activity.AdminActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="教师认证"
+            android:background="@color/orange"
+            android:gravity="center"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ls"
+            android:background="@color/white"
+            android:dividerHeight="5dp"
+            android:divider="@color/allbg"
+            android:layout_margin="10dp"></ListView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
